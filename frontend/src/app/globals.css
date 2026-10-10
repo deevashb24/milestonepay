@@ -1,0 +1,32 @@
+@import "tailwindcss";
+
+:root {
+  --background: #0A0D14;
+  --surface: #111726;
+  --border: #1E293B;
+  --escrow-emerald: #10B981;
+  --oracle-cyan: #06B6D4;
+  --amber: #F59E0B;
+  --text-primary: #F8FAFC;
+  --text-muted: #94A3B8;
+}
+
+body {
+  background-color: var(--background);
+  color: var(--text-primary);
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+  overflow-x: hidden;
+}
+
+@keyframes pulse-emerald {
+  0%, 100% {
+    box-shadow: 0 0 15px rgba(16, 185, 129, 0.3);
+  }
+  50% {
+    box-shadow: 0 0 25px rgba(16, 185, 129, 0.6);
+  }
+}
+
+.glow-escrow {
+  animation: pulse-emerald 2s infinite ease-in-out;
+}
